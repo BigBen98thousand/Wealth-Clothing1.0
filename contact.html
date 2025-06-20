@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Wealth Clothing</title>
+  <link rel="stylesheet" href="wealth.css" />
+</head>
+<body>
+
+<!-- ✅ NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.jpg" alt="Wealth Clothing Logo" />
+    </a>
+    <h3 class="logo-text">WEALTH CLOTHING</h3>
+  </div>
+  <nav id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">🛒</a>
+  </nav>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- ✅ Page Title -->
+<section class="contact-intro">
+  <h1>Let’s Talk</h1>
+  <p>Have a question, order request, or just want to connect? We’d love to hear from you.</p>
+</section>
+
+<!-- ✅ Contact Info + Form Cards -->
+<section class="contact-container">
+
+  <!-- Contact Form Card -->
+  <form class="contact-form gradient-card" action="submit.php" method="POST" class="order-form">
+    <h3>Send Us a Message</h3>
+
+    <label for="name">Full Name:</label>
+    <input type="text" name="name" id="name" placeholder="Your name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" name="email" id="email" placeholder="you@example.com" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" name="phone" id="phone" placeholder="+234..." required>
+
+    <label for="message">Your Message:</label>
+    <textarea name="message" id="message" rows="5" placeholder="What’s on your mind?" required></textarea>
+
+    <button type="submit" class="btn-gold">Send Message</button>
+  </form>
+  
+  <!-- Contact Info Card -->
+  <div class="contact-card gradient-card">
+    <h3>Reach Us Directly</h3>
+    <p><strong>Email:</strong> <a href="mailto:support@wealthclothing.ng">support@wealthclothing.ng</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+2348123456789">+234 812 345 6789</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/2348123456789" target="_blank">Chat on WhatsApp</a></p>
+
+    
+    
+<!-- ✅ Footer -->
+<footer class="footer">
+  <div class="footer-container" style="border-radius: 10px; padding: 10px;">
+    <!-- About Wealth -->
+    <div class="footer-col">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.jpg" alt="Wealth Clothing Logo" />
+        </a>
+      </div>
+      <h3>Wealth Clothing</h3>
+      <p>More than fashion — it's identity. Designed for <br>
+         kings, built with pride from Lagos to the world.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact / Socials -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p>Email: support@wealthclothing.ng</p>
+      <p>Phone: +234 812 345 6789</p>
+      <div class="socials">
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wealth Clothing. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+</div>
+
+</section>
+
+
+<!-- ✅ Hamburger Menu -->
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    nav.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

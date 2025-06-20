@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wealth Clothing - Home</title>
+  <link rel="stylesheet" href="wealth.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="logo.jpg" alt="Wealth Clothing Logo">
+      </a>
+      <h3 class="logo-text">WEALTH CLOTHING</h3>
+    </div>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">🛒</a>
+    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Crafted for Kings.<br>Inspired by Lagos.</h1>
+      <a href="shop.html" class="btn-gold">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured">
+    <h2>Featured Products</h2>
+    <p class="featured-intro">
+  Every piece in this collection was handpicked for kings who move with purpose. These are our bestsellers — bold, timeless, and rooted in street-class. Wear Wealth. Represent greatness.
+</p>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="sweat shirt1.jpg" alt="Sweat Shirt">
+        <h2>Sweat Shirt</h2>
+        <h3>Price: #40,000</h3>
+        <button class="add-to-cart" data-product="Sweat shirt" data-price="40000">Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="hero2.jpg" alt="Leather Jacket">
+        <h2>Leather Jacket</h2>
+        <h3>Price: #55,000</h3>
+        <button class="add-to-cart" data-product="Leather Jacket" data-price="55000">Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="jj1.jpg" alt="Sweatshirt">
+        <h2> Utility Vest</h2>
+        <h3>Price: #35,000</h3>
+        <button class="add-to-cart" data-product="Utility Vest" data-price="35000">Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="kaki.jpg" alt=" Cargo pants">
+        <h2>Cargo Pants</h2>
+        <h3>Price: #50,000</h3>
+        <button class="add-to-cart" data-product="Cargo Pants" data-price="50000">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Quote -->
+  <section class="quote">
+    <h2>More than fashion — it’s identity.</h2>
+    <p>Wealth Clothing was born in the heart of Lagos — a city whose style meets hustle. Our brand stays true to Benin roots, infusing a sense of pride and excellence in its wear.</p>
+  </section>
+
+  <!-- Why Wealth -->
+  <section class="why-wealth">
+    <h2>Why Wealth Clothing?</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>👑 Royalty</h3>
+        <p>Our designs make you feel like the king you are — bold, respected, and confident.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🌍 Identity</h3>
+        <p>Every piece reflects our cultural pride — a fusion of Lagos style and Benin roots.</p>
+      </div>
+      <div class="feature-box">
+        <h3>💎 Quality</h3>
+        <p>From stitching to fabric, we deliver excellence that lasts — because you deserve it.</p>
+      </div>
+    </div>
+  </section>
+<div class="new2">
+  <!-- Story Section -->
+  <section class="our-story">
+    <h2>Our Style, Our Story.</h2>
+    <h3>Wealth Clothing isn’t just about what you wear. It’s about what you represent. Born in Lagos, shaped in Benin, our brand stands for authenticity, hustle, and elegance. Whether you're on the mainland or across the world, wear your royalty.</h3>
+    <blockquote>
+      "When you wear Wealth, you're not just dressed — you're declared." – Founder
+    </blockquote>
+  </section>
+</div>
+  <!-- Instagram -->
+  <section class="follow-us">
+    <h2>Follow Us on Instagram</h2>
+    <h3>@wealthclothing — See how kings and queens are rocking our gear.</h3>
+    <br>
+    <a href="https://instagram.com/wealthclothing" target="_blank" class="btn-gold">View Instagram</a>
+  </section>
+
+  
+</div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- About Wealth -->
+      <div class="footer-col">
+        <div class="logo">
+          <a href="index.html">
+            <img src="logo.jpg" alt="Wealth Clothing Logo">
+          </a>
+        </div>
+        <h3>Wealth Clothing</h3>
+        <p>More than fashion — it's identity. Designed <br>
+        for kings, built with pride from Lagos to the world.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact / Socials -->
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p>Email: support@wealthclothing.ng</p>
+        <p>Phone: +234 812 345 6789</p>
+        <div class="socials">
+          <a href="#">Instagram</a> |
+          <a href="#">Twitter</a> |
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Wealth Clothing. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("active");
+    }
+
+    
+    const buttons = document.querySelectorAll(".add-to-cart");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const product = btn.getAttribute("data-product");
+      const price = btn.getAttribute("data-price");
+
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.push({ product, price });
+      localStorage.setItem("cart", JSON.stringify(cart));
+
+      window.location.href = "cart.html";
+    });
+  });
+  </script>
+
+</body>
+</html>

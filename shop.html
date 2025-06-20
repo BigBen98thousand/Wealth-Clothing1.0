@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wealth Clothing - Shop</title>
+  <link rel="stylesheet" href="wealth.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">
+    <a href="index.html"><img src="logo.jpg" alt="Wealth Clothing Logo"></a>
+    <h3 class="logo-text">WEALTH CLOTHING</h3>
+  </div>
+  <nav id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">🛒</a>
+  </nav>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- Shop Hero/Intro -->
+<section class="featured">
+  <h2>Wealth Clothing</h2>
+  <h3 class="featured-intro">
+    Discover our handpicked collection of statement pieces. Whether it's a bold hoodie or a laid-back net tee, every item is tailored to speak confidence, culture, and class, Just the core essentials of style. Browse below and wear your royalty.
+  </h3>
+
+  <!-- Product Grid -->
+  <div class="product-grid">
+    <!-- 12 Products -->
+    <div class="product-card">
+      <img src="tt3.jpg" alt="Hoodie">
+      <h2>Signature Hoodie</h2>
+      <h3>Price: #42,000</h3>
+      <button class="add-to-cart" data-product="Signature Hoodie" data-price="42000">Order Now</button>
+    </div>
+    <div class="product-card">
+      <img src="sweat shirt1.jpg" alt="Sweatshirt">
+      <h2>Bold Sweatshirt</h2>
+      <h3>Price: #40,000</h3>
+      <button class="add-to-cart" data-product="Sweat Shirt" data-price="40000">Order Now</button>
+    </div>
+    <div class="product-card">
+      <img src="hero2.jpg" alt="Leather Jacket">
+      <h2>Leather Jacket</h2>
+      <h3>Price: #75,000</h3>
+      <button class="add-to-cart" data-product="Leather Jacket" data-price="75000">Order Now</button>
+    </div>
+    <div class="product-card">
+      <img src="jj1.jpg" alt="Vest">
+      <h2>Utility Vest</h2>
+      <h3>Price: #38,000</h3>
+      <button class="add-to-cart" data-product="Utility Vest" data-price="38000">Order Now</button>
+    </div>
+    <div class="product-card">
+      <img src="kaki.jpg" alt="Cargo Pants">
+      <h2>Cargo Pants</h2>
+      <h3>Price: #45,000</h3>
+      <button class="add-to-cart" data-product="Cargo Pants" data-price="45000">Order Now</button>
+    </div>
+    <div class="product-card">
+      <img src="net1.jpg" alt="Net Tee">
+      <h2>Net T-Shirt</h2>
+      <h3>Price: #22,000</h3>
+      <button class="add-to-cart" data-product="Net T-Shirt" data-price="22000">Order Now</button>
+    </div>
+    <div class="product-card">
+      <img src="tt2.jpg" alt="T-Shirt">
+      <h2>Standard Tee</h2>
+      <h3>Price: #18,000</h3>
+      <button class="add-to-cart" data-product="Standard Tee" data-price="18000">Order Now</button>
+    </div>
+    <div class="product-card">
+      <img src="hoodie1.jpg" alt="Hoodie">
+      <h2>Street Hoodie</h2>
+      <h3>Price: #44,000</h3>
+      <button class="add-to-cart" data-product="Street Hoodie" data-price="44000">Order Now</button>
+    </div>
+    <div class="product-card">
+      <img src="tt4.jpg" alt="Baseball Jacket">
+      <h2>Baseball Jacket</h2>
+      <h3>Price: #39,000</h3>
+      <button class="add-to-cart" data-product="Baseball Jacket" data-price="39000">Order Now</button>
+    </div>
+    <div class="product-card">
+      <img src="tt5.jpg" alt="Vest">
+      <h2>Rebel Jacket</h2>
+      <h3>Price: #36,000</h3>
+      <button class="add-to-cart" data-product="Rebel Jacket" data-price="36000">Order Now</button>
+    </div>
+    <div class="product-card">
+      <img src="tt6.jpg" alt="Net T-Shirt">
+      <h2>Vintage Tee</h2>
+      <h3>Price: #21,000</h3>
+      <button class="add-to-cart" data-product="Vintage Tee" data-price="21000">Order Now</button>
+    </div>
+    <div class="product-card">
+      <img src="tt7.jpg" alt="Short">
+      <h2>Pattern Short</h2>
+      <h3>Price: #20,000</h3>
+      <button class="add-to-cart" data-product="Pattern Short" data-price="20000">Order Now</button>
+    </div>
+  </div>
+</section>
+<!-- Order Section -->
+<section class="order-form-section">
+  <h2>Order Now</h2>
+  <p>Pick your favorite from the collection and place your order directly. We'll handle the rest.</p>
+  
+  <form class="order-form" action="cart.html" method="GET">
+    <label for="product">Select Product:</label>
+    <select name="product" id="product" required>
+      <option value="">-- Choose a product --</option>
+      <option value="Signature Hoodie">Signature Hoodie</option>
+      <option value="Bold Sweatshirt">Bold Sweatshirt</option>
+      <option value="Classic Leather Jacket">Classic Leather Jacket</option>
+      <option value="Utility Vest">Utility Vest</option>
+      <option value="Urban Cargo Pants">Urban Cargo Pants</option>
+      <option value="Net T-Shirt">Net T-Shirt</option>
+      <option value="Standard Tee">Standard Tee</option>
+    </select>
+
+    <label for="size">Size:</label>
+    <select name="size" id="size" required>
+      <option value="S">Small (S)</option>
+      <option value="M">Medium (M)</option>
+      <option value="L">Large (L)</option>
+      <option value="XL">Extra Large (XL)</option>
+    </select>
+
+    <label for="qty">Quantity:</label>
+    <input type="number" name="qty" id="qty" value="1" min="1" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" name="phone" id="phone" placeholder="+234..." required>
+
+    <button type="submit" class="btn-gold">Add to Cart</button>
+  </form>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- About -->
+    <div class="footer-col">
+      <div class="logo">
+        <a href="index.html"><img src="logo.jpg" alt="Wealth Clothing Logo"></a>
+      </div>
+      <h3>Wealth Clothing</h3>
+      <p>More than fashion — it's identity. Designed <br>
+        for kings, built with pride from Lagos to the world.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact / Socials -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p>Email: support@wealthclothing.ng</p>
+      <p>Phone: +234 812 345 6789</p>
+      <div class="socials">
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wealth Clothing. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    nav.classList.toggle("active");
+  }
+
+
+
+  const buttons = document.querySelectorAll(".add-to-cart");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const product = btn.getAttribute("data-product");
+      const price = btn.getAttribute("data-price");
+
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.push({ product, price });
+      localStorage.setItem("cart", JSON.stringify(cart));
+
+      window.location.href = "cart.html";
+    });
+  });
+</script>
+</body>
+</html>

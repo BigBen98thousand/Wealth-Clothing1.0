@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart - Wealth Clothing</title>
+  <link rel="stylesheet" href="wealth.css" />
+</head>
+<body>
+
+  <!-- Include your navbar here -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="logo.jpg" alt="Logo" /></a>
+      <h3 class="logo-text">WEALTH CLOTHING</h3>
+    </div>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">🛒</a>
+    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section class="featured">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+
+    <form action="submit.php" method="POST" class="order-form">
+      <input type="hidden" name="cartData" id="cartData" />
+
+      <label for="name">Full Name:</label>
+      <input type="text" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" name="phone" required />
+
+      <label for="address">Delivery Address:</label>
+      <textarea name="address" rows="3" required></textarea>
+
+      <button type="submit" class="btn-gold">Place Order</button>
+    </form>
+  </section>
+
+  
+    <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- About -->
+    <div class="footer-col">
+      <div class="logo">
+        <a href="index.html"><img src="logo.jpg" alt="Wealth Clothing Logo"></a>
+      </div>
+      <h3>Wealth Clothing</h3>
+      <p>More than fashion — it's identity. Designed <br>
+        for kings, built with pride from Lagos to the world.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact / Socials -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p>Email: support@wealthclothing.ng</p>
+      <p>Phone: +234 812 345 6789</p>
+      <div class="socials">
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wealth Clothing. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("active");
+    }
+
+    const cartDisplay = document.getElementById('cart-items');
+    const cartDataInput = document.getElementById('cartData');
+
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    if (cart.length === 0) {
+      cartDisplay.innerHTML = "<p>Your cart is empty.</p>";
+    } else {
+      let html = "<ul>";
+      cart.forEach(item => {
+        html += <li><strong>${item.product}</strong> — ₦${item.price}</li>;
+      });
+      html += "</ul>";
+      cartDisplay.innerHTML = html;
+      cartDataInput.value = JSON.stringify(cart);
+    }
+  </script>
+</body>
+</html>
