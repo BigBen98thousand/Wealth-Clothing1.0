@@ -87,8 +87,13 @@ text-shadow: 0 2px 3px black;
 .featured h2 {
   margin-bottom: 30px;
   font-size: 2rem;
+  color:#014421;
 }
+.featured p{
+color:black;
+  
 
+}
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
